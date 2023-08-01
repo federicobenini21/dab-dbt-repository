@@ -1,0 +1,21 @@
+models:
+  - name: stg_cc_sales_
+    columns:
+      ### PK ###
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: qty
+        tests:
+          - not_null
+  - name: stg_cc_stock
+    columns:
+      ### PK ###
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: product_name
+        tests:
+          - not_null
